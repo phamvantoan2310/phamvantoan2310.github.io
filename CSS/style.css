@@ -1,8 +1,277 @@
-footer{
-    background-color: gray;
-    height: 100px;
+/*ResetCSSstyles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-footer p{
+
+/*Bodystyles*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Headerstyles*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px0;
     text-align: center;
-    padding-top: 40px;
 }
+
+.profile-image img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.profile-info {
+    margin-top: 10px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.profile-info p {
+    font-size: 16px;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-menu li {
+    margin-right: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color0.3sease;
+}
+
+.main-menu a:hover {
+    color: #ffd700;
+}
+
+/*Maincontentstyles*/
+main {
+    padding: 40px0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0auto;
+    padding: 020px;
+}
+
+.container p{
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/*Footerstyles*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.gridView1 {
+    display: grid;
+    grid-template-columns: 60% auto;
+    
+}
+
+.first-content {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.content {
+    flex-basis: 56%;
+}
+
+.content p {
+    display: flex;
+    padding-left: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: black;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    width: 150%;
+}
+
+.secondary-content {
+    padding-left: 15rem;
+    display: flex;
+    width: 100%;
+}
+
+
+
+h1 {
+    padding-left: 15rem;
+    width: 130%;
+    color: black;
+    font-size: 70px;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 80px;
+    word-wrap: break-word;
+}
+
+
+.image {
+
+    /* flex-basis: 44%; */
+    padding-top: 5rem;
+}
+
+.image1 {
+    width: 50%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.image2 {
+    width: 40%;
+    height: 80%;
+    border-radius: 1px;
+    margin-bottom: 8%;
+}
+
+/* Ipad mini  */
+@media screen and (max-width: 768px){
+    .gridView1 {
+        display: flex;
+        width: 768px;
+        
+    }
+
+    .main-content {
+        display: flex;
+        padding-top: 15rem;
+        width: 100%;
+    }
+
+    .content {
+    }
+
+    .secondary-content {
+        padding-left: 2rem;
+        display: flex;
+        width: 100%;
+    }
+
+    h1 {
+        padding-left: 0rem;
+        width: 130%;
+        color: black;
+        font-size: 70px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word;
+    }
+    .image {
+        padding-top: 5rem;
+        display: none;
+    }
+}
+
+/* Iphone12 Pro  */
+@media screen and (max-width: 391px){
+    .gridView1 {
+        display: flex;
+        width: 390px;
+    }
+
+    .main-content {
+        display: flex;
+        padding-top: 15rem;
+        width: 100%;
+    }
+
+    .content {
+    }
+
+    .secondary-content {
+        padding-left: 2rem;
+        display: flex;
+        width: 100%;
+    }
+    h1 {
+        padding-left: 2rem;
+        width: 130%;
+        color: black;
+        font-size: 70px;
+        font-family: Sora;
+        font-weight: 600;
+        line-height: 80px;
+        word-wrap: break-word;
+    }
+    .image {
+        padding-top: 5rem;
+        display: none;
+    }
+}
+
+.icon{
+    padding-left: 75%;
+    margin-top: 200px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+    margin-right:30px;
+  }
+  .fa-linkedin {
+    border-radius: 50%;
+    background: #007bb5;
+    color: white;
+  }
+  .fa-twitter {
+    border-radius: 50%;
+    background: #55ACEE;
+    color: white;
+    margin-left: 30px;
+  }
+
